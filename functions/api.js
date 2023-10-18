@@ -5,6 +5,6 @@ export default async (request, context) => {
     // let test = JSON.parse(request.httpMethod)
 
     return Response.json(
-        {message: JSON.stringify(request.body)}
+        {message: JSON.stringify(context)}
     )
 }

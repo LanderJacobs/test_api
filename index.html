@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Let's test this</title>
+</head>
+
+<body>
+    <h1>test</h1>
+	<script>
+		(function() {
+        if (document.referrer && document.location.host && document.referrer.match(new RegExp("^https?://" + document.location.host))) {
+          document.getElementById("back-link").setAttribute("href", document.referrer);
+        }
+      })();
+	</script>
+    <script src="api.js"></script>
+</body>
+
+</html>

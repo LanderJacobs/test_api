@@ -1,5 +1,7 @@
 export default async (request, context) => {
-    return Response.json({
-        message: "hello its me"
-    })
+    let test = JSON.parse(request.body)
+
+    return Response.json(
+        test
+    )
 }

@@ -2,9 +2,9 @@ export default async (request, context) => {
     // log(request)
     // log("-------")
     // log(context)
-    let test = JSON.parse(request.httpMethod)
+    // let test = JSON.parse(request.httpMethod)
 
     return Response.json(
-        {message: Request.httpMethod}
+        {message: "hello world!"}
     )
 }

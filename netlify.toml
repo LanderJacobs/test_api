@@ -3,5 +3,7 @@
 functions = "functions"
 
 [[redirects]]
-from = "./.netlify/functions/api"
-to = "/"
+from = "/api/*"
+to = "/.netlify/functions/api/:splat"
+force = true
+status = 200

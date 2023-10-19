@@ -6,7 +6,8 @@ const hatReviewSchema = new mongoose.Schema({
     rating: {type: String},
     review: {type: String}
 }, {
-    collection: 'hatreview'
+    collection: 'hatreview',
+    versionKey: false
 });
 
 module.exports = mongoose.model("Review", hatReviewSchema);

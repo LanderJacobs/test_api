@@ -8,7 +8,7 @@ const router = require('./routes')
 const app = express();
 
 app.use(express.json());
-app.use('/.netlify/functions/api', router);
+app.use('/api', router);
 
 mongoose.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true });
 

@@ -75,8 +75,9 @@ router.get("/reviews/hat/:hatid", async (req, res) => {
 
 router.post('/review/create', async (req, res) => {
     console.log("another one");
+    const data = JSON.parse(req.body);
     try{
-        res.send(await Review.create(req.body));
+        res.send(await Review.create(data));
     } catch (e) {
         console.log(`why no post: ${e}`);
         res.sendStatus(500);
@@ -87,8 +88,9 @@ router.post('/review/create', async (req, res) => {
 
 router.put('/review/update/:id', async (req, res) => {
     console.log("time for change");
+    const data = JSON.parse(req.body);
     try{
-        res.send(await Review.findByIdAndUpdate(req.params.id, { $set: req.body}));
+        res.send(await Review.findByIdAndUpdate(req.params.id, { $set: data}));
     } catch (e) {
         console.log(`no-one wants to change: ${e}`);
         res.sendStatus(500);

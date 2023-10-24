@@ -1,14 +1,18 @@
 [
+    
     {
         "id":1,
-        "name": "santa hat"
+        "name": "cowboy hat",
+        "filename": "cowboy"
     },
     {
         "id":2,
-        "name": "backwards cap"
+        "name": "santa hat",
+        "filename": "kerstmuts"
     },
     {
         "id":3,
-        "name": "ugly hat"
+        "name": "cap",
+        "filename": "muts"
     }
 ]

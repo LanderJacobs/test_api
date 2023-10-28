@@ -90,9 +90,10 @@ router.post('/review/create', async (req, res) => {
 
 router.put('/review/update/:id', async (req, res) => {
     console.log("/review/update/:id has been called");
-    const data = JSON.parse(req.body);
+    // const data = JSON.parse(req.body);
     try{
-        res.send(await Review.findByIdAndUpdate(req.params.id, { $set: data}));
+        res.send(await Review.findByIdAndUpdate(req.params.id, { $set: req.body}));
+        // res.send(await Review.findByIdAndUpdate(req.params.id, { $set: data}));
     } catch (e) {
         console.log(e);
         res.sendStatus(500);

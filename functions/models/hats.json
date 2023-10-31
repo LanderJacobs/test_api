@@ -2,17 +2,22 @@
     
     {
         "id":1,
-        "name": "cowboy hat",
+        "name": "Cowboy hat",
         "filename": "cowboy"
     },
     {
         "id":2,
-        "name": "santa hat",
+        "name": "Santa hat",
         "filename": "kerstmuts"
     },
     {
         "id":3,
-        "name": "cap",
+        "name": "Cap",
         "filename": "muts"
+    },
+    {
+        "id":4,
+        "name": "Chullo",
+        "filename": "chullo"
     }
 ]
